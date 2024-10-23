@@ -34,7 +34,7 @@ function Title(props: Props) {
     >
       {text.split('').map((word, index) => (
         <span
-          className={`inline-block uppercase ${fontSize()} ${animation} ${className} `}
+          className={`inline-block uppercase ${fontSize()} ${animation} ${className}  `}
           key={index}
         >
           {word}
