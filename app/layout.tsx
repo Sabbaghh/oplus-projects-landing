@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import Navbar from '@/components/NavBar';
 
 const sixCaps = localFont({
   src: './fonts/SixCaps.ttf',
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${sixCaps.variable} ${popins.variable}  antialiased`}>
+        <Navbar />
         {children}
       </body>
     </html>
